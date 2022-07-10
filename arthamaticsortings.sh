@@ -6,5 +6,5 @@ echo "enter B value"
 echo "enter C value"
  read C
 echo "three values are" $A $B $C
-X=$(awk 'BEGIN {print '$A' + '$B' * '$C'}')
-echo "X=" $X
+XYZ=$(awk 'BEGIN {print '$A' + '$B' * '$C'}')
+echo "XYZ=" $XYZ
