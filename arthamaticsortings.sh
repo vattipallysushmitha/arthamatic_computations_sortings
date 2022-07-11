@@ -10,5 +10,5 @@ xyz=$(awk 'BEGIN {print '$A' + '$B' * '$C'}')
 echo "a+b*c=" $xyz
 abc=$(awk 'BEGIN {print '$A' % '$B' + '$C'}')
 echo "a*b+c=" $abc
-pqr=$(awk 'BEGIN {print '$C' + '$A' / '$B'}')
-echo "c+a/b=" $pqr
+rst=$(awk 'BEGIN {print '$C' + '$A' / '$B'}')
+echo "c+a/b=" $rst
