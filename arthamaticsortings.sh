@@ -8,9 +8,15 @@ echo "enter C value"
 echo "three values are" $A $B $C
 xyz=$(awk 'BEGIN {print '$A' + '$B' * '$C'}')
 echo "a+b*c=" $xyz
-abc=$(awk 'BEGIN {print '$A' % '$B' + '$C'}')
+abc=$(awk 'BEGIN {print '$A' * '$B' + '$C'}')
 echo "a*b+c=" $abc
 rst=$(awk 'BEGIN {print '$C' + '$A' / '$B'}')
 echo "c+a/b=" $rst
 mno=$(awk 'BEGIN {print '$A' % '$B' + '$C'}')
 echo "a%b+c=" $rst
+declare -A arthamatic
+arthamatic[add]=$xyz
+arthamatic[multiply]=$abc
+arthamatic[divide]=$rst
+arthamatic[module]=$mno
+echo "results in dictionary are=${arthamatic[@]}"
